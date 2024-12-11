@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+	<meta charset="utf-8"   />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>
+	Alternate Portfolio Website Family Communication Page
+	</title>
+	<style>
+
+.item
+{
+color: black;
+font-size: 1.5rem;
+padding: 1rem;
+text-align: center;
+}
+.container
+	{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 10px black;
+	}
+	.form
+	{
+	display: flex;
+	flex-direction: row;
+	}
+	.formB
+	{
+	flex-direction: column;
+	}
+
+form
+		{
+		width: 500px;
+		height: 400px;
+		padding: 20px;
+		margin: auto;
+		background: #7a7cbb;
+		font-size: 20px;
+		}
+		input[type=text]
+		{
+		width: 500px;
+		padding: 5px;
+		font-size: 17px;
+		}
+		input [type=submit]
+		{
+		padding: 5px;
+		font-size: 18px;
+		}
+		textarea
+		{
+		background: #f2f2f2;
+		width: 500px;
+		font-size: 20px;
+		margin: auto;
+		}
+	
+
+</style>
+<script type= "text/javascript">
+	              function show()
+		{
+			dispWin=window.open('','NewWin', 'toolbar=no, status=no, width=600, height=400');
+			
+			message = "<ul><li>First Name: " + document.getElementById("fName").value;
+			message += "<li>Last Name: " + document.getElementById("lName").value;
+			message += "<li>Email Address: " + document.getElementById("email").value;
+			message += "<li>Question: " + document.getElementById("question").value;
+			message += "</ul>";
+		        dispWin.document.write(message);
+
+		}
+	</script>
+
+</head>
+<body>
+
+  <div class="container1">
+    <div class= "item item1">Family Communication<br><img src= "../images/communication icon.jpg" alt= "Communication Image" /></div>
+	<ul>
+		<li><a href="">ParentSquare</a></li>		
+		<li><a href="">Class Website</a></li>
+		<li><a href="">School Contact Info</a></li>
+		<li><a href="../PPScreenshots/Family Communication.png" target= "_blank">Family Communication</a></li>
+	</ul>	 
+  </div>
+<br>
+<br>
+<div class= "container">
+	<form class= "form formB" name="form3" method="POST" action= "https://formsubmit.co/gonzalezsergio728@yahoo.com" enctype= "multipart/form-data">
+	First Name: <br>
+	<input  type="text" id="fName" size="5"><br>
+	Last Name: <br>
+	<input type="text" id="lName" size="5"><br>
+	Your Email Address:<br>
+	<input type="email" id="email"size="5"><br>
+	Please enter any question or concern here: <br>
+	<textarea id="question" size "50" rows="5" cols="20">
+	</textarea><br><br>
+	<input name= "display" type="submit" value= "Display" onclick= "show();">
+	<input type= "reset" value= "Clear the Form"/>
+	</form>
+</div>
+<br>
+<br>
+<div class= "item itemA"><a href= "../index.html"><button>Return to Home Page</button></a></div> 
+
+</body>
+</html>
